@@ -1,0 +1,83 @@
+.order-statistics-component {
+  padding: 0;
+
+  .header {
+    // margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .ant-typography {
+      &:first-child { margin-bottom: 4px; }
+      &:last-child { color: #9ba9b4; font-size: 14px; }
+    }
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 24px;
+    text-align: left;
+
+    .orders-count {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 600;
+      color: #2a3f54;
+    }
+    .orders-label {
+      font-size: 14px;
+      color: #9ba9b4;
+      margin-top: 4px;
+    }
+    .donut-chart {
+      width: 120px !important;
+      height: 120px !important;
+    }
+  }
+
+  .list-items {
+    display: flex;
+    flex-direction: column;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      .item-info {
+        display: flex;
+        align-items: center;
+      }
+      .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 20px;
+      }
+      .electronic { background-color: rgba(85,110,230,0.1); color: #556ee6; }
+      .fashion   { background-color: rgba(113,221,55,0.1); color: #71dd37; }
+      .decor     { background-color: rgba(50,211,235,0.1); color: #32d3eb; }
+      .sports    { background-color: rgba(206,212,218,0.1); color: #adb5bd; }
+
+      .titles {
+        display: flex;
+        flex-direction: column;
+        .ant-typography:first-child {color: #2a3f54; text-align: left; }
+        .ant-typography:last-child  { color: #9ba9b4; }
+      }
+      .value {
+        font-size: 16px;
+        color: #9ba9b4;
+      }
+    }
+  }
+}
